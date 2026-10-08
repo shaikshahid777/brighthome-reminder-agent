@@ -1,0 +1,80 @@
+[
+  {
+    "name": "LEAD-202 - Decline Appointment",
+    "dynamic_variables": {
+      "reschedule_link": "https://brighthome.example.com/r/8841",
+      "appointment_time": "10:00 AM",
+      "service_type": "Recurring Biweekly Clean",
+      "appointment_date": "2026-06-22",
+      "customer_name": "Maria Gomez",
+      "service_address": "142 Oakridge Ave"
+    },
+    "metrics": [
+      "Agent acknowledges the decline politely and offers rescheduling options."
+    ],
+    "user_prompt": "No, I won't be able to make it.",
+    "creation_timestamp": 1791438657326,
+    "user_modified_timestamp": 1791438657326,
+    "type": "simulation",
+    "tool_mocks": [],
+    "llm_model": "gpt-4.1-mini"
+  },
+  {
+    "name": "LEAD-204 - Missing Link",
+    "dynamic_variables": {
+      "appointment_date": "2026-06-22",
+      "appointment_time": "10:00 AM",
+      "service_type": "Recurring Biweekly Clean",
+      "customer_name": "Maria Gomez",
+      "service_address": "142 Oakridge Ave"
+    },
+    "metrics": [
+      "Agent says the office will follow up separately instead of reading a blank link."
+    ],
+    "user_prompt": "Can you send me the reschedule link?",
+    "creation_timestamp": 1791438427637,
+    "user_modified_timestamp": 1791438427637,
+    "type": "simulation",
+    "tool_mocks": [],
+    "llm_model": "gpt-4.1-mini"
+  },
+  {
+    "name": "LEAD-203 - Missing Name",
+    "dynamic_variables": {
+      "service_address": "142 Oakridge Ave",
+      "appointment_date": "2026-06-22",
+      "appointment_time": "10:00 AM",
+      "service_type": "Recurring Biweekly Clean",
+      "reschedule_link": "https://brighthome.example.com/r/8841"
+    },
+    "metrics": [
+      "Agent handles missing name with generic greeting (\"Hi there\") instead of breaking."
+    ],
+    "user_prompt": "Hi, yes, this is the person you called for.",
+    "creation_timestamp": 1791438230955,
+    "user_modified_timestamp": 1791438230955,
+    "type": "simulation",
+    "tool_mocks": [],
+    "llm_model": "gpt-4.1-mini"
+  },
+  {
+    "name": "LEAD-201 - Happy Path",
+    "dynamic_variables": {
+      "appointment_date": "2026-06-22",
+      "customer_name": "Maria Gomez",
+      "reschedule_link": "https://brighthome.example.com/r/8841",
+      "service_type": "Recurring Biweekly Clean",
+      "appointment_time": "10:00 AM",
+      "service_address": "142 Oakridge Ave"
+    },
+    "metrics": [
+      "Agent greets Maria by name, confirms date, time, service, address, and provides reschedule link."
+    ],
+    "user_prompt": "Hi, yes, this is Maria. I am confirming my appointment.",
+    "creation_timestamp": 1791437665740,
+    "user_modified_timestamp": 1791437665740,
+    "type": "simulation",
+    "tool_mocks": [],
+    "llm_model": "gpt-4.1-mini"
+  }
+]
